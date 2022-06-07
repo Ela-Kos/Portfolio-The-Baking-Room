@@ -1,0 +1,529 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* USEFUL BACKGROUND INFO TO PUT IN HTML TAG
+  html {
+    background: url(img/amr-taha-XaOi8jLHTsM-unsplash.png) no-repeat center
+      center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  background-image: url(img/alex-krivec-background-image.jpg);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/* BACKGROUND HERO IMAGE */
+/* #hero-image {
+  background-image: url(img/alex-krivec-background-image.jpg);
+  position: fixed;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+} */
+
+/* HEADER NAVIGATION */
+#nav {
+  width: 100%;
+  position: fixed;
+  z-index: 15;
+  justify-content: flex-start;
+}
+#nav,
+ul,
+li {
+  top: 0px;
+  justify-content: flex-start;
+  background-color: deeppink;
+  /* height: fit-content; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* line-height: 1.3em; */
+  z-index: 5;
+  width: 100%;
+}
+
+ul,
+li,
+.fa-solid fa-bars,
+.fa-brands fa-github,
+.fa-brands fa-instagram {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style-type: none;
+  color: white;
+  margin: auto;
+  font-family: farm-new, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  width: 100%;
+  z-index: 5;
+}
+
+/* ACTIVE NAVIGATION */
+#nav ul li:link {
+  color: rgb(130, 2, 2);
+  cursor: pointer;
+}
+
+#nav ul li:visited {
+  color: violet;
+  cursor: pointer;
+}
+
+#nav ul li:hover {
+  color: rgb(130, 2, 2);
+  cursor: pointer;
+}
+
+#nav ul li:active {
+  color: rgb(130, 2, 113);
+  cursor: pointer;
+}
+
+#nav ul li {
+  text-align: center;
+}
+
+/* BAKING ROOM CIRCLE */
+#container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#circle {
+  position: fixed;
+  top: 90px;
+  margin: 0, auto, 0, auto;
+  background-color: rgba(255, 5, 243, 0.542);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.hero-text {
+  position: absolute;
+  margin: auto;
+  top: 25%;
+  left: 25%;
+  font-family: neonoir, sans-serif, "Open sans";
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  display: block;
+  font-size: 70px;
+  letter-spacing: -0.3rem;
+  line-height: 100%;
+}
+
+/* CONTENT */
+main {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 510px;
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0 0px;
+}
+
+/* ABOUT */
+.section-one {
+  position: relative;
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap column;
+  /* max-width: 900px; */
+  background-color: rgba(38, 12, 18, 0.704);
+  color: white;
+  margin-bottom: 80px;
+  border-radius: 20px;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.section-one a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.section-one a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.section-one a:hover {
+  text-decoration: none;
+  color: deeppink;
+}
+
+.section-one a:active {
+  text-decoration: none;
+  color: rgba(245, 34, 146, 0.542);
+}
+
+.card-about {
+  width: 100%;
+  transition: 0.3s;
+}
+
+/* BAKES */
+.section-two {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap column;
+  /* max-width: 900px; */
+  background-color: rgba(38, 12, 18, 0.704);
+  color: white;
+  margin-bottom: 80px;
+  border-radius: 20px;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.card-bakes {
+  width: 100%;
+  justify-content: center;
+}
+
+.picture-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap row;
+  margin-top: 30px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  margin-left: 0px;
+  position: relative;
+}
+
+img {
+  width: 80%;
+  height: 90%;
+  border-radius: 50%;
+  border-style: ridge;
+  border-width: 3px;
+  border-color: blueviolet;
+  margin-left: 50px;
+}
+
+.picture {
+  display: inline-block;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: wrap column;
+  width: 250px;
+}
+
+/* .breads {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+} */
+
+/* CONTACT FORM */
+.section-three {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap column;
+  /* max-width: 900px; */
+  background-color: rgba(38, 12, 18, 0.704);
+  color: white;
+  margin-bottom: 80px;
+  border-radius: 20px;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.card-contact {
+  justify-content: center;
+  align-items: column;
+}
+
+.titles,
+p {
+  font-size: 30px;
+  color: white;
+  position: relative;
+  margin-top: 10px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+}
+
+.titles {
+  font-family: farm-new, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: deeppink;
+}
+
+p {
+  position: relative;
+  font-family: farm-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: justify;
+}
+
+#contact-form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 50px;
+  font-family: farm-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: white;
+  padding: 25px 120px 25px 25px;
+  display: center;
+  max-width: 300px;
+  border-style: none;
+}
+
+.name {
+  max-width: 500px;
+  padding: 0px 16px 10px 16px;
+  /* margin: 8px 0 8px 0; */
+  border-radius: 6px;
+  border: none;
+  display: block;
+}
+
+.fields {
+  font-family: farm-new, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: white;
+  color: deeppink;
+  /* max-width: 300px; */
+  padding: 5px 10px 5px 10px;
+  margin: 8px 0 8px 0;
+  border-radius: 6px;
+  border-color: blueviolet;
+  border-style: solid;
+}
+
+.fields-message {
+  width: 100%;
+  font-family: farm-new, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: white;
+  color: deeppink;
+  padding: 10px 0px 10px 0px;
+  margin: 10px 0px 20px 0px;
+  border-radius: 6px;
+  border-color: blueviolet;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+}
+
+#submit {
+  font-family: farm-new, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 1rem;
+  background-color: deeppink;
+  border-radius: 12px;
+  border-color: blueviolet;
+  padding: 10px;
+  transition-duration: 0.4s;
+}
+
+#submit:hover {
+  background-color: darkviolet;
+  color: white;
+}
+
+/* FOOTER */
+.info {
+  position: fixed;
+  width: 100%;
+  background-color: deeppink;
+  height: 50px;
+  left: 0px;
+  bottom: 0px;
+  font-family: farm-new, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* MEDIA QUERY */
+/* NAVIGATION */
+@media only screen and (max-width: 300px) and (min-width: 650px) {
+  #nav,
+  ul,
+  li {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    /* width: 100vw; */
+    margin-bottom: 500px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* BAKING ROOM CIRCLE */
+  #container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #circle {
+    top: 200px;
+    margin: 0, auto, 0, auto;
+    background-color: rgba(255, 5, 243, 0.542);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .hero-text {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 25%;
+    font-family: neonoir, sans-serif, "Open sans";
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: 40px;
+    letter-spacing: -0.3rem;
+    line-height: 100%;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #nav,
+  ul,
+  li {
+    flex-direction: column;
+    /* width: 50vw; */
+  }
+
+  .card-about,
+  .card-bakes,
+  .card-contact {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-about,
+  .card-bakes,
+  .card-contact {
+    width: 80%;
+  }
+}
+
+/* EXTRA INFO */
+
+/* FONTS */
+/* 
+Farm New Thin
+font-family: farm-new, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Farm New Light
+font-family: farm-new, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Farm New Regular
+font-family: farm-new, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Farm New Medium
+font-family: farm-new, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Farm New Bold
+font-family: farm-new, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+HT Neon Regular
+font-family: ht-neon,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Ohm Bold
+font-family: ohm-bold, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Ohm Light
+font-family: ohm-light, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Ohm Medium
+font-family: ohm-medium, sans-serif;
+font-weight: 500;
+font-style: normal; 
+
+Neonoir Slim
+font-family: neonoir, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Neonoir Bold
+font-family: neonoir, sans-serif;
+font-weight: 700;
+font-style: normal;*/

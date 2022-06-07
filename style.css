@@ -3,16 +3,6 @@
   padding: 0px;
 }
 
-/* USEFUL BACKGROUND INFO TO PUT IN HTML TAG
-  html {
-    background: url(amr-taha-XaOi8jLHTsM-unsplash.png) no-repeat center
-      center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  } */
-
 html,
 body {
   box-sizing: border-box;
@@ -31,7 +21,7 @@ body {
 
 /* BACKGROUND HERO IMAGE */
 /* #hero-image {
-  background-image: url(img/alex-krivec-background-image.jpg);
+  background-image: url(alex-krivec-background-image.jpg);
   position: fixed;
   background-repeat: repeat;
   width: 100%;
